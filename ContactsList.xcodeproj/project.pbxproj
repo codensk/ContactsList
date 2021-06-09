@@ -55,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				A24242F8266F14DA003B0B32 /* ContactsList */,
-				A242431D266F61F6003B0B32 /* Views */,
 				A24242F7266F14DA003B0B32 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +76,7 @@
 				A2424345267062EE003B0B32 /* Extensions */,
 				A2424311266F15E5003B0B32 /* Models */,
 				A242431A266F188D003B0B32 /* Services */,
+				A242431D266F61F6003B0B32 /* Views */,
 				A2424310266F15DE003B0B32 /* ViewControllers */,
 			);
 			path = ContactsList;
