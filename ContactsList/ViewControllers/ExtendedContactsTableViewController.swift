@@ -12,14 +12,15 @@ class ExtendedContactsTableViewController: UITableViewController {
     var persons: [Person] = []
     private var dataManager: DataManager!
     
-    private let cellIdentifier = "extendedContactCell"
-    private let detailsVCIdentifier = "detailsVC"
-    
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configure()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        tableView.reloadData()
     }
     
     // MARK: - Methods
@@ -28,7 +29,7 @@ class ExtendedContactsTableViewController: UITableViewController {
         
         tableView.rowHeight = 47
     }
-
+    
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         persons.count
@@ -39,7 +40,7 @@ class ExtendedContactsTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! PersonTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Identifier.extendedContactsCell.rawValue, for: indexPath) as! PersonTableViewCell
         
         cell.phoneLabel.text = persons[indexPath.section].phone
         cell.emailLabel.text = persons[indexPath.section].email
@@ -50,7 +51,7 @@ class ExtendedContactsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let detailsVC = storyboard?.instantiateViewController(identifier: detailsVCIdentifier) as? DetailsViewController else { return }
+        guard let detailsVC = storyboard?.instantiateViewController(identifier: Identifier.detailsVC.rawValue) as? DetailsViewController else { return }
         
         detailsVC.person = persons[indexPath.section]
         

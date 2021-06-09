@@ -245,6 +245,148 @@
             </objects>
             <point key="canvasLocation" x="1544.6153846153845" y="464.21800947867297"/>
         </scene>
+        <!--Add Contact View Controller-->
+        <scene sceneID="25N-eV-5bO">
+            <objects>
+                <viewController storyboardIdentifier="addContactVC" id="iMF-XO-Tcd" customClass="AddContactViewController" customModule="ContactsList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Ol-hv-jxi">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Kje-fW-B67">
+                                <rect key="frame" x="15" y="85" width="355" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eqb-ez-W7M">
+                                        <rect key="frame" x="0.0" y="0.0" width="173.66666666666666" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="hHG-Ks-i4n"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gtH-UF-rfM">
+                                        <rect key="frame" x="181.66666666666663" y="0.0" width="173.33333333333337" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wWG-du-7ve">
+                                <rect key="frame" x="15" y="52.666666666666657" width="23" height="22.333333333333336"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="23" id="JVa-dI-OXE"/>
+                                    <constraint firstAttribute="height" constant="25" id="v7m-g8-vXQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Полное имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avC-mu-XAr">
+                                <rect key="frame" x="47" y="54.000000000000007" width="323" height="20.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Телефон" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6g-ju-c30">
+                                <rect key="frame" x="47" y="149" width="323" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YOi-KN-HeK">
+                                <rect key="frame" x="15" y="147.33333333333334" width="23" height="22.999999999999986"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="524-Ri-GtT"/>
+                                    <constraint firstAttribute="width" constant="23" id="H91-U8-aFi"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WXl-Ag-sjy">
+                                <rect key="frame" x="15" y="179" width="355" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="kcN-c6-mbM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="tel"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqp-I1-BdY">
+                                <rect key="frame" x="127.66666666666669" y="343" width="135" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="rhS-YJ-AGO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Добавить"/>
+                                <connections>
+                                    <action selector="addButtonTapped" destination="iMF-XO-Tcd" eventType="touchUpInside" id="24I-qO-AHT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Электронная почта" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yO-sW-KEs">
+                                <rect key="frame" x="47" y="243" width="323" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="envelope" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="LPn-dy-O5K">
+                                <rect key="frame" x="15" y="242.33333333333334" width="23" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="CWz-4Z-Dux"/>
+                                    <constraint firstAttribute="width" constant="23" id="yIw-WC-qGy"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NLq-0d-Mve">
+                                <rect key="frame" x="15" y="273" width="355" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="sTQ-Mt-Nvn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="email"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MPs-0L-bHx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MPs-0L-bHx" firstAttribute="trailing" secondItem="NLq-0d-Mve" secondAttribute="trailing" constant="20" id="8Ye-mg-A09"/>
+                            <constraint firstItem="W6g-ju-c30" firstAttribute="leading" secondItem="YOi-KN-HeK" secondAttribute="trailing" constant="9" id="9sb-PQ-6uJ"/>
+                            <constraint firstItem="avC-mu-XAr" firstAttribute="leading" secondItem="wWG-du-7ve" secondAttribute="trailing" constant="9" id="9yZ-OK-Kra"/>
+                            <constraint firstItem="NLq-0d-Mve" firstAttribute="top" secondItem="LPn-dy-O5K" secondAttribute="bottom" constant="8" symbolic="YES" id="D0n-ee-Ium"/>
+                            <constraint firstItem="4yO-sW-KEs" firstAttribute="leading" secondItem="LPn-dy-O5K" secondAttribute="trailing" constant="9" id="D2H-yn-VJH"/>
+                            <constraint firstItem="WXl-Ag-sjy" firstAttribute="leading" secondItem="MPs-0L-bHx" secondAttribute="leading" constant="15" id="L7o-L5-wua"/>
+                            <constraint firstItem="W6g-ju-c30" firstAttribute="top" secondItem="Kje-fW-B67" secondAttribute="bottom" constant="24" id="Lv3-CP-vXE"/>
+                            <constraint firstItem="MPs-0L-bHx" firstAttribute="trailing" secondItem="WXl-Ag-sjy" secondAttribute="trailing" constant="20" id="M1R-I8-FSv"/>
+                            <constraint firstItem="WXl-Ag-sjy" firstAttribute="top" secondItem="YOi-KN-HeK" secondAttribute="bottom" constant="8" symbolic="YES" id="NI7-Fy-QSj"/>
+                            <constraint firstItem="YOi-KN-HeK" firstAttribute="top" secondItem="Kje-fW-B67" secondAttribute="bottom" constant="21" id="Tjw-VI-pWL"/>
+                            <constraint firstItem="Kje-fW-B67" firstAttribute="top" secondItem="wWG-du-7ve" secondAttribute="bottom" constant="9" id="UgA-Tw-cNm"/>
+                            <constraint firstItem="wWG-du-7ve" firstAttribute="leading" secondItem="MPs-0L-bHx" secondAttribute="leading" constant="15" id="W7s-iE-O6q"/>
+                            <constraint firstItem="LPn-dy-O5K" firstAttribute="leading" secondItem="MPs-0L-bHx" secondAttribute="leading" constant="15" id="Xfe-cG-ijw"/>
+                            <constraint firstItem="avC-mu-XAr" firstAttribute="top" secondItem="MPs-0L-bHx" secondAttribute="top" constant="10" id="cKs-iY-YCv"/>
+                            <constraint firstItem="tqp-I1-BdY" firstAttribute="top" secondItem="NLq-0d-Mve" secondAttribute="bottom" constant="30" id="cN8-5s-Ekz"/>
+                            <constraint firstItem="MPs-0L-bHx" firstAttribute="trailing" secondItem="4yO-sW-KEs" secondAttribute="trailing" constant="20" id="cdp-V4-ntA"/>
+                            <constraint firstItem="MPs-0L-bHx" firstAttribute="trailing" secondItem="Kje-fW-B67" secondAttribute="trailing" constant="20" id="d6Q-fB-eU5"/>
+                            <constraint firstItem="Kje-fW-B67" firstAttribute="leading" secondItem="MPs-0L-bHx" secondAttribute="leading" constant="15" id="dub-m9-FoL"/>
+                            <constraint firstItem="4yO-sW-KEs" firstAttribute="top" secondItem="WXl-Ag-sjy" secondAttribute="bottom" constant="24" id="fPh-qM-7YK"/>
+                            <constraint firstItem="YOi-KN-HeK" firstAttribute="leading" secondItem="MPs-0L-bHx" secondAttribute="leading" constant="15" id="fTu-vj-f8m"/>
+                            <constraint firstItem="wWG-du-7ve" firstAttribute="top" secondItem="MPs-0L-bHx" secondAttribute="top" constant="7" id="lFH-Ch-hcH"/>
+                            <constraint firstItem="MPs-0L-bHx" firstAttribute="trailing" secondItem="W6g-ju-c30" secondAttribute="trailing" constant="20" id="msC-gH-woA"/>
+                            <constraint firstItem="tqp-I1-BdY" firstAttribute="centerX" secondItem="0Ol-hv-jxi" secondAttribute="centerX" id="t5z-lH-1GC"/>
+                            <constraint firstItem="LPn-dy-O5K" firstAttribute="top" secondItem="WXl-Ag-sjy" secondAttribute="bottom" constant="21" id="tXc-wE-Fcy"/>
+                            <constraint firstItem="MPs-0L-bHx" firstAttribute="trailing" secondItem="avC-mu-XAr" secondAttribute="trailing" constant="20" id="udn-0t-m0o"/>
+                            <constraint firstItem="NLq-0d-Mve" firstAttribute="leading" secondItem="MPs-0L-bHx" secondAttribute="leading" constant="15" id="xNh-73-j6r"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="tqp-I1-BdY" id="PII-wW-627"/>
+                        <outlet property="emailTextField" destination="NLq-0d-Mve" id="Tav-hl-nck"/>
+                        <outlet property="firstNameTextField" destination="eqb-ez-W7M" id="Ngw-T4-8CB"/>
+                        <outlet property="lastNameTextField" destination="gtH-UF-rfM" id="vy5-Et-vUf"/>
+                        <outlet property="phoneTextField" destination="WXl-Ag-sjy" id="FfO-ng-dp5"/>
+                        <outletCollection property="iconImage" destination="wWG-du-7ve" collectionClass="NSMutableArray" id="jhR-43-vZG"/>
+                        <outletCollection property="personLabel" destination="avC-mu-XAr" collectionClass="NSMutableArray" id="4WJ-19-LgK"/>
+                        <outletCollection property="iconImage" destination="YOi-KN-HeK" collectionClass="NSMutableArray" id="jsX-dT-2hO"/>
+                        <outletCollection property="personLabel" destination="W6g-ju-c30" collectionClass="NSMutableArray" id="tww-di-z1q"/>
+                        <outletCollection property="iconImage" destination="LPn-dy-O5K" collectionClass="NSMutableArray" id="oxx-iW-X5i"/>
+                        <outletCollection property="personLabel" destination="4yO-sW-KEs" collectionClass="NSMutableArray" id="djC-uP-wd5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j2j-KU-nJI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2561.5384615384614" y="771.32701421800948"/>
+        </scene>
         <!--Contacts-->
         <scene sceneID="wa3-Ky-itT">
             <objects>
@@ -287,6 +429,7 @@
     <resources>
         <image name="email" width="60" height="60"/>
         <image name="envelope" catalog="system" width="128" height="93"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.crop.circle" catalog="system" width="128" height="121"/>
         <image name="phone" catalog="system" width="128" height="115"/>
         <image name="rectangle.stack.person.crop.fill" catalog="system" width="128" height="122"/>

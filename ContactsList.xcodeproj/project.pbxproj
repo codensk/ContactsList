@@ -18,6 +18,8 @@
 		A2424319266F181A003B0B32 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2424318266F181A003B0B32 /* Person.swift */; };
 		A242431C266F189A003B0B32 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A242431B266F189A003B0B32 /* DataManager.swift */; };
 		A242431F266F6218003B0B32 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A242431E266F6218003B0B32 /* PersonTableViewCell.swift */; };
+		A2424341267055B4003B0B32 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2424340267055B4003B0B32 /* AddContactViewController.swift */; };
+		A242434726706306003B0B32 /* UIViewController+showAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A242434626706306003B0B32 /* UIViewController+showAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		A2424318266F181A003B0B32 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		A242431B266F189A003B0B32 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		A242431E266F6218003B0B32 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		A2424340267055B4003B0B32 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		A242434626706306003B0B32 /* UIViewController+showAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+showAlert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 				A242430E266F15AD003B0B32 /* Application */,
 				A242430D266F159F003B0B32 /* Storyboards */,
 				A242430F266F15BA003B0B32 /* Resources */,
+				A2424345267062EE003B0B32 /* Extensions */,
 				A2424311266F15E5003B0B32 /* Models */,
 				A242431A266F188D003B0B32 /* Services */,
 				A2424310266F15DE003B0B32 /* ViewControllers */,
@@ -110,6 +115,7 @@
 				A2424312266F160D003B0B32 /* ContactsTableViewController.swift */,
 				A2424314266F1673003B0B32 /* ExtendedContactsTableViewController.swift */,
 				A2424316266F1688003B0B32 /* DetailsViewController.swift */,
+				A2424340267055B4003B0B32 /* AddContactViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -136,6 +142,14 @@
 				A242431E266F6218003B0B32 /* PersonTableViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A2424345267062EE003B0B32 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A242434626706306003B0B32 /* UIViewController+showAlert.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,11 +225,13 @@
 				A2424319266F181A003B0B32 /* Person.swift in Sources */,
 				A24242FA266F14DA003B0B32 /* AppDelegate.swift in Sources */,
 				A24242FC266F14DA003B0B32 /* SceneDelegate.swift in Sources */,
+				A2424341267055B4003B0B32 /* AddContactViewController.swift in Sources */,
 				A242431C266F189A003B0B32 /* DataManager.swift in Sources */,
 				A2424313266F160D003B0B32 /* ContactsTableViewController.swift in Sources */,
 				A2424315266F1673003B0B32 /* ExtendedContactsTableViewController.swift in Sources */,
 				A242431F266F6218003B0B32 /* PersonTableViewCell.swift in Sources */,
 				A2424317266F1688003B0B32 /* DetailsViewController.swift in Sources */,
+				A242434726706306003B0B32 /* UIViewController+showAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
